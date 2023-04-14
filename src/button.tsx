@@ -1,11 +1,15 @@
-import React from "react";
 import "./index.css";
 
-export const Button = () => {
+interface ButtonProps {
+  classes?: string;
+  icon?: string;
+}
+
+export const Button = ({ classes, icon }: ButtonProps) => {
   return (
-    <div className={`button-container`}>
+    <div className={`button-container ${classes}`}>
       <div className="button-unlock" onClick={() => alert("unlock is here")}>
-        Unlock Wallet
+        {icon} Unlock Wallet
       </div>
     </div>
   );

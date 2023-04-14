@@ -1,23 +1,18 @@
-import React from "react";
 import Button from "./button";
 import "./index.css";
 
-function App() {
+const App = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-600">
-        Simple React Typescript Tailwind Sample
-      </h1>
-
-      <header className="header">
-        <Button />
+      <header className="header absolute w-[100vw]">
+        <Button classes="justify-end" />
       </header>
 
-      <main className="main">
-        <Button />
+      <main className="main h-screen">
+        <Button classes="justify-center" icon="🔒" />
       </main>
     </>
   );
-}
+};
 
 export default App;
