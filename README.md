@@ -1,6 +1,7 @@
 # wallet_authentication_web3
+
 Implement a simple wallet authentication using both metamask and wallet connect to view the inside page. Adding some UI with typescript, tailwind
-///////////////////////////
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
