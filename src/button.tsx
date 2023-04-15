@@ -1,15 +1,28 @@
 import "./index.css";
 
 interface ButtonProps {
+  name: string;
   classes?: string;
   icon?: string;
+  onClick?: () => void;
+  background?: string;
 }
 
-export const Button = ({ classes, icon }: ButtonProps) => {
+export const Button = ({
+  name,
+  classes,
+  icon,
+  onClick,
+  background,
+}: ButtonProps) => {
   return (
     <div className={`button-container ${classes}`}>
-      <div className="button-unlock" onClick={() => alert("unlock is here")}>
-        {icon} Unlock Wallet
+      <div
+        className="button-unlock"
+        onClick={onClick || (() => {})}
+        style={{ backgroundColor: background }}
+      >
+        {icon} {name}
       </div>
     </div>
   );
